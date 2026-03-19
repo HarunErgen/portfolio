@@ -17,32 +17,31 @@ function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>Aditya Kumar Srivastava - Software Engineer</title>
-        <meta name="description" content="Welcome to Aditya Kumar Srivastava's portfolio website. I'm Aditya Kumar Srivastava, a passionate software developer showcasing my projects, skills, and experience." />
-        <meta name="keywords" content="Adityasri, AdityaSri, adityasri.in, Aditya Kumar Srivastava,adityasri portfolio, Software Engineer" />
-        <meta name="author" content="Aditya Kumar Srivastava" />
-        <meta property="og:title" content="Aditya Kumar Srivastava - Portfolio" />
+        <title>Harun Reşid Ergen - Software Engineer</title>
+        <meta name="description" content="Welcome to Harun Reşid Ergen's portfolio website. I'm Harun Reşid Ergen, a passionate software developer showcasing my projects, skills, and experience." />
+        <meta name="keywords" content="Harun Reşid Ergen, Harun Ergen, Harun Ergen Portfolio, Software Engineer, AI Engineer" />
+        <meta name="author" content="Harun Reşid Ergen" />
+        <meta property="og:title" content="Harun Reşid Ergen - Portfolio" />
         <meta property="og:description" content="Welcome to my portfolio website. Explore my projects, skills, and professional experience." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://adityasri.in" />
+        <meta property="og:url" content="https://github.com/HarunErgen/portfolio" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Aditya Kumar Srivastava - Portfolio" />
+        <meta name="twitter:title" content="Harun Reşid Ergen - Portfolio" />
         <meta name="twitter:description" content="Welcome to my portfolio website. Explore my projects, skills, and professional experience." />
-        <link rel="canonical" href="https://adityasri.in" />
+        <link rel="canonical" href="https://github.com/HarunErgen/portfolio" />
         {/* SEO: Structured Data for Google */}
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Aditya Kumar Srivastava",
-            "url": "https://adityasri.in",
+            "name": "Harun Reşid Ergen",
+            "url": "https://github.com/HarunErgen/portfolio",
             "sameAs": [
-              "https://github.com/adityasrivastava29",
-              "https://www.linkedin.com/in/adityakumar29/",
-              "https://x.com/adityasri_in"
+              "https://github.com/HarunErgen",
+              "https://www.linkedin.com/in/harunresidergen/"
             ],
             "jobTitle": "Software Engineer",
-            "description": "Portfolio website of Aditya Kumar Srivastava, Software Engineer. Projects, skills, experience, and contact information."
+            "description": "Portfolio website of Harun Reşid Ergen, Software Engineer. Projects, skills, experience, and contact information."
           }
         `}</script>
         {/* SEO: Robots meta tag */}

@@ -42,7 +42,7 @@ const Header = () => {
             className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
             onClick={() => scrollToSection('about')}
           >
-            Aditya Kumar Srivastava
+            Harun Reşid Ergen
           </button>
           <ul className="hidden md:flex items-center gap-6 text-sm">
             <li><a className="hover:text-primary transition-colors" href="#about" onClick={() => scrollToSection('about')}>About</a></li>
@@ -53,9 +53,9 @@ const Header = () => {
             <li><a className="hover:text-primary transition-colors" href="#certifications" onClick={() => scrollToSection('certifications')}>Certifications</a></li>
             <li><a className="hover:text-primary transition-colors" href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
             <li>
-              <a 
-                href="https://drive.google.com/file/d/1fldTztMS-MU08XEVPBXLoe1RSHx5kZ7T/view?usp=sharing" 
-                download="Resume.pdf" 
+              <a
+                href="/Resume.pdf"
+                download="Resume.pdf"
                 className="inline-flex h-9 items-center rounded-md border border-border px-3 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
               >
                 Resume
@@ -83,9 +83,9 @@ const Header = () => {
               <li><a className="block hover:text-primary" href="#certifications" onClick={() => scrollToSection('certifications')}>Certifications</a></li>
               <li><a className="block hover:text-primary" href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
               <li>
-                <a 
-                  href="https://drive.google.com/file/d/1fldTztMS-MU08XEVPBXLoe1RSHx5kZ7T/view?usp=sharing" 
-                  download="Resume.pdf" 
+                <a
+                  href="/Resume.pdf"
+                  download="Resume.pdf"
                   className="inline-flex h-9 items-center rounded-md border border-border px-3 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
                 >
                   Resume

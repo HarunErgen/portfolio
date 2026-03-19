@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { footer } from '../data/footer';
+import { profile } from '../data/profile';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +26,7 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('https://formsubmit.co/adityasri.in@gmail.com', {
+      const response = await fetch(`https://formsubmit.co/${footer.email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -81,22 +83,34 @@ const Contact = () => {
             <div className="mt-6 space-y-4">
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-primary" />
-                <a href="mailto:adityasrivastava.niet@gmail.com" className="hover:text-primary transition-colors">
-                  adityasrivastava.niet@gmail.com
+                <a href={`mailto:${footer.email}`} className="hover:text-primary transition-colors">
+                  {footer.email}
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <FaLinkedin className="text-primary" />
-                <a href="https://www.linkedin.com/in/adityakumar29" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  linkedin.com/in/adityakumar29
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaGithub className="text-primary" />
-                <a href="https://github.com/adityaSrivastava29" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  github.com/adityaSrivastava29
-                </a>
-              </div>
+              {footer.phone && (
+                <div className="flex items-center gap-3">
+                  <FaPhone className="text-primary" />
+                  <a href={`tel:${footer.phone}`} className="hover:text-primary transition-colors">
+                    {footer.phone}
+                  </a>
+                </div>
+              )}
+              {footer.linkedin && (
+                <div className="flex items-center gap-3">
+                  <FaLinkedin className="text-primary" />
+                  <a href={footer.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                    LinkedIn Profile
+                  </a>
+                </div>
+              )}
+              {footer.github && (
+                <div className="flex items-center gap-3">
+                  <FaGithub className="text-primary" />
+                  <a href={footer.github} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                    GitHub Profile
+                  </a>
+                </div>
+              )}
             </div>
           </div>
 

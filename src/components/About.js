@@ -3,10 +3,9 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
 import { ReactTyped } from 'react-typed';
-import adityaPic from '../Assets/aditya-kumar-pic.jpeg';
 import { profile } from '../data/profile';
 import { motion } from 'framer-motion';
-// Tailwind migration: inline classes
+import harunPic from '../Assets/PP.jpeg';
 
 const About = () => {
   return (
@@ -142,8 +141,8 @@ const About = () => {
 
             <div className="relative w-full max-w-sm overflow-hidden rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm shadow-lg group-hover:shadow-xl transition-all duration-500">
               <motion.img
-                src={profile.image || adityaPic}
-                alt="Aditya Kumar"
+                src={profile.image || harunPic}
+                alt={profile.name}
                 className="w-full h-auto"
                 loading="lazy"
                 whileHover={{ scale: 1.02 }}
@@ -158,44 +157,52 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}>
-            <motion.a
-              href={`mailto:${profile.social.email}`}
-              aria-label="Email"
-              className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}>
-              <FaEnvelope />
-            </motion.a>
-            <motion.a
-              href={profile.social.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}>
-              <FaLinkedin />
-            </motion.a>
-            <motion.a
-              href={profile.social.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
-              whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.95 }}>
-              <FaGithub />
-            </motion.a>
-            <motion.a
-              href={profile.social.x}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="x"
-              className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
-              whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.95 }}>
-              <BsTwitterX />
-            </motion.a>
+            {profile.social.email && (
+              <motion.a
+                href={`mailto:${profile.social.email}`}
+                aria-label="Email"
+                className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                whileTap={{ scale: 0.95 }}>
+                <FaEnvelope />
+              </motion.a>
+            )}
+            {profile.social.linkedin && (
+              <motion.a
+                href={profile.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                whileTap={{ scale: 0.95 }}>
+                <FaLinkedin />
+              </motion.a>
+            )}
+            {profile.social.github && (
+              <motion.a
+                href={profile.social.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                whileTap={{ scale: 0.95 }}>
+                <FaGithub />
+              </motion.a>
+            )}
+            {profile.social.x && (
+              <motion.a
+                href={profile.social.x}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="x"
+                className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                whileTap={{ scale: 0.95 }}>
+                <BsTwitterX />
+              </motion.a>
+            )}
           </motion.div>
         </motion.div>
       </div>

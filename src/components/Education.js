@@ -1,4 +1,5 @@
 import React from 'react';
+import { education } from '../data/education';
 
 const Education = () => {
   return (
@@ -9,17 +10,18 @@ const Education = () => {
         </div>
 
         <div className="space-y-4">
-          <div className="rounded-md border border-border bg-card p-5 shadow-sm">
-            <h3 className="text-lg font-semibold">Bachelor of Technology in Computer Science and Engineering</h3>
-            <h4 className="text-sm text-muted-foreground">Noida Institute of Engineering and Technology, Greater Noida</h4>
-            <p className="text-xs text-muted-foreground mt-1">August 2018 - August 2022</p>
-            <p className="mt-2"><strong>CGPA:</strong> 8.4 (Passed with distinction)</p>
-          </div>
-          <div className="rounded-md border border-border bg-card p-5 shadow-sm">
-            <h3 className="text-lg font-semibold">Intermediate</h3>
-            <h4 className="text-sm text-muted-foreground">Harihar Singh Academy, Varanasi</h4>
-            <p className="text-xs text-muted-foreground mt-1">April 2016 - June 2017</p>
-          </div>
+          {education.map((item, index) => (
+            <div key={index} className="rounded-md border border-border bg-card p-5 shadow-sm">
+              <h3 className="text-lg font-semibold">{item.degree}</h3>
+              <h4 className="text-sm text-muted-foreground">{item.institution}</h4>
+              <p className="text-xs text-muted-foreground mt-1">{item.period}</p>
+              {item.extra && (
+                <p className="mt-2 text-sm">
+                   {item.extra}
+                </p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>

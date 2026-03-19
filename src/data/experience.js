@@ -1,30 +1,35 @@
 export const experience = [
   {
     title: "Software Engineer",
-    company: "Cognizant, Noida",
-    period: "September 2022 - Present",
+    company: "HAVELSAN, Ankara",
+    period: "September 2024 - Present",
     bullets: [
-      "Spearheaded development of scalable REST APIs (Express.js), increasing API performance by 40% and reducing response time by 50ms.",
-      "Designed reusable React components, improving developer productivity by 25%.",
-      "Improved code quality with SonarQube; reduced technical debt and improved maintainability.",
-      "Managed builds with AWS CodeBuild and streamlined deployments.",
-      "Built comprehensive unit tests using Mocha and Jest achieving 95% coverage.",
+      "Delivered 50+ REST endpoints across 3 microservices using Java 21 Spring Boot for tax system integrations.",
+      "Built 5+ end-to-end UI pages using TypeScript and Angular for complex government data workflows.",
+      "Slashed query latency from seconds to milliseconds for the 50M+ record National Address Database using PostgreSQL schema redesign and composite indexing.",
+      "Built Kafka producer and consumer workflows for real-time microservices data synchronization.",
+      "Automated deployment workflows using Jenkins CI/CD pipeline with Docker, Kubernetes, and ArgoCD.",
     ],
   },
   {
-    title: "Genc Next Intern",
-    company: "Cognizant, Noida",
-    period: "February 2022 - September 2022",
+    title: "Software Engineer",
+    company: "Entrapeer, San Francisco (Remote)",
+    period: "June 2023 - September 2024",
     bullets: [
-      "Trained on Full Stack Java development",
-      "Worked on Springboot application with relational databases such as MySQL",
-      "Created Springboot Microservices and deployed on AWS",
+      "Built a RAG-based AI agent using LLMs, LangChain, and LangGraph, accelerating research operations by 95%.",
+      "Developed high-performance Python (FastAPI) REST APIs and Selenium-integrated scrapers, reducing manual data aggregation time by 90%.",
+      "Designed a hybrid retrieval system using MongoDB and Pinecone (vector embeddings) for sub-second semantic search across 3M+ records.",
+      "Scaled asynchronous task processing using Celery and RabbitMQ, increasing system throughput by 300%.",
+      "Deployed and managed cost-efficient, fault-tolerant services on AWS (EC2, S3, SQS, Load Balancing).",
     ],
   },
   {
     title: "Software Engineer Intern",
-    company: "Apisero, Noida",
-    period: "August 2022 - October 2022",
-    bullets: [],
+    company: "Tatil Sepeti, Istanbul",
+    period: "June 2022 - September 2022",
+    bullets: [
+      "Developed an automated customer support chatbot using Python and TensorFlow.",
+    ],
   },
 ];
+

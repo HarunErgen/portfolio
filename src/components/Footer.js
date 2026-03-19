@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-// Tailwind migration: inline classes
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { profile } from '../data/profile';
+import { footer } from '../data/footer';
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
       <div className="container py-10">
         <div className="flex flex-col md:flex-row gap-8 md:gap-4 justify-between">
           <div className="space-y-2">
-            <h3 className="text-lg font-semibold">Aditya Kumar Srivastava</h3>
-            <p className="max-w-md text-sm text-muted-foreground">Software Engineer with a passion for creating innovative, scalable, and high-performance solutions.</p>
+            <h3 className="text-lg font-semibold">{profile.name}</h3>
+            <p className="max-w-md text-sm text-muted-foreground">{profile.bio[0]}</p>
           </div>
 
           <div>
@@ -19,6 +20,8 @@ const Footer = () => {
               <li><a className="hover:text-primary transition-colors" href="#experience">Experience</a></li>
               <li><a className="hover:text-primary transition-colors" href="#projects">Projects</a></li>
               <li><a className="hover:text-primary transition-colors" href="#skills">Skills</a></li>
+              <li><a className="hover:text-primary transition-colors" href="#education">Education</a></li>
+              <li><a className="hover:text-primary transition-colors" href="#certifications">Certifications</a></li>
             </ul>
           </div>
 
@@ -26,26 +29,33 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Connect</h3>
             <ul className="mt-3 flex items-center gap-4">
               <li>
-                <a className="hover:text-primary transition-colors" href="https://www.linkedin.com/in/adityakumar29" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a className="hover:text-primary transition-colors" href={footer.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin size={20} />
                 </a>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="https://github.com/adityaSrivastava29" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a className="hover:text-primary transition-colors" href={footer.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <FaGithub size={20} />
                 </a>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="mailto:adityasrivastava.niet@gmail.com" aria-label="Email">
+                <a className="hover:text-primary transition-colors" href={`mailto:${footer.email}`} aria-label="Email">
                   <FaEnvelope size={20} />
                 </a>
               </li>
+              {footer.phone && (
+                <li>
+                  <a className="hover:text-primary transition-colors" href={`tel:${footer.phone}`} aria-label="Phone">
+                    <FaPhone size={20} />
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>
 
         <div className="mt-8 border-t border-border pt-4 text-center text-xs text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Aditya Kumar. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
         </div>
       </div>
     </footer>
