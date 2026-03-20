@@ -5,7 +5,6 @@ export const profile = {
   titles: ["Software Engineer", "Full Stack Developer", "AI Engineer"],
   bio: [
     "Software Engineer with 2.5+ years of experience delivering high-impact software across AI-driven enterprise products and national-scale government projects.",
-    "I build scalable, high-performance applications using Java, Python, TypeScript, and Go.",
     "Passionate about solving complex challenges in fast-paced, collaborative environments. Ready to build something exceptional together.",
   ],
   image: null, // User to provide their own image

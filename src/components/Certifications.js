@@ -15,7 +15,6 @@ const Certifications = () => {
       <div className="container text-center">
         <div className="mb-12">
           <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">Certifications</h2>
-          <p className="mt-2 text-muted-foreground">Recognized achievements in the field of technology.</p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 justify-center">
