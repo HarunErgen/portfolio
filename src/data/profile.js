@@ -2,7 +2,7 @@ import harunPic from "../Assets/PP.jpeg";
 
 export const profile = {
   name: "Harun Reşid Ergen",
-  titles: ["Software Engineer", "AI Engineer"],
+  titles: ["Software Engineer"],
   bio: [
     "Software Engineer with 2.5+ years of experience delivering high-impact software across AI-driven enterprise products and national-scale government projects.",
     "Passionate about solving complex challenges in fast-paced, collaborative environments. Ready to build something exceptional together.",
