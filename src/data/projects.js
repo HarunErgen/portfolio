@@ -17,8 +17,8 @@ export const projects = [
     title: 'MentorSOP AI Statement of Purpose Writer',
     period: '2026',
     bullets: [
-      'Built a full-stack AI-powered SOP writing assistant using React, FastAPI, and PostgreSQL',
-      'Accepts structured user input (background, goals, experiences) and generates personalized Statements of Purpose via LLM integration',
+      'Built a full-stack SOP writing assistant using React, FastAPI, and PostgreSQL to create personalized letters.',
+      'Accepts structured user input (background, goals, experiences) and generates personalized Statements of Purpose via LLM integration.',
     ],
     links: {
       code: 'https://github.com/HarunErgen/mentor-sop',
